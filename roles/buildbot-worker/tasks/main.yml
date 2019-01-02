@@ -12,6 +12,7 @@
       # repoclient needs these:
       - python3-requests
       - python3-gi
+      - subversion
     state: latest
   when: ansible_os_family == "Debian"
   tags:
@@ -31,6 +32,7 @@
        # repoclient needs these:
        - python34-requests
        - python34-gobject
+       - subversion
     state: latest
   when: ansible_distribution == "CentOS"
   tags:
